@@ -1,0 +1,39 @@
+<!-- NOTE: A few pieces have been added to make this file more "CORRECT" HTML. -->
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jolly+Lodger">
+  </head>
+
+
+  <body>
+    <p id="starter">
+      How many rounds:
+    </p>
+
+    <input id="ROUNDS_TO_PLAY" style="width:7em" type="number" min="1" max="100" placeholder="Rounds?" />
+    <button id="startButton" onClick="startGame();setRounds()">Start</button><br>
+
+
+    <button id="ROCK" onClick="userChoice(this);updateRounds()" class="play">Rock</button>
+    <button id="SCIS" onClick="userChoice(this);updateRounds()" class="play">Scissors</button>
+    <button id="PAPR" onClick="userChoice(this);updateRounds()" class="play">Paper</button>
+    <button id="SPOK" onClick="userChoice(this);updateRounds()" class="play">Spock</button>
+    <button id="LIZD" onClick="userChoice(this);updateRounds()" class="play">Lizard</button>
+
+
+    <p id="rounds2">
+    Rounds to Play:
+    </p>
+    <p id="rounds" class="play"></p>
+    <p id="computerAction" class="play"></p>
+    <p id="round" class="play"></p>
+    <p id="winner"> </p>
+  </body>
+
+</html>
